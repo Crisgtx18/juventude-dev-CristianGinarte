@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: blueviolet
+}
+
+input,
+button,
+select {
+    margin: 4px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: white;
+    text-align: center;
+}
+
+input:hover,
+button:hover,
+select:hover {
+    background-color: lightblue;
+    outline: none;
+}
+
+input:focus,
+button:focus,
+select:focus {
+    outline: none;
+}
