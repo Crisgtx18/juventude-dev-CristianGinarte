@@ -10,7 +10,7 @@ Crear portafolio personal accesibe y organizado, que presente su trayectoria y e
 > por lo menos 2 proyectos
 > imagen con texto alternativo
 > tablas con datos reales
-> links internos y para Github
+> links internos y para Github 
 > formulario con nombre, email, asunto, mensages
 > validacion de campos con html
 > configuracion de envios con JavaScript
