@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Cristian Ginarte Cardenas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Portafolio de Cristian Ginarte Cardenas</h1>
+        <nav aria-label="Navegación principal">
+            <ul id="menubar">
+                <li><a href="#datos_personales">Perfil</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#tabla_estudios">Dominio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-grid">
+        <div class="bienvenida card-full">
+            <p>Bienvenido a mi portafolio. Explora mis proyectos, habilidades técnicas y experiencia en desarrollo web y
+                tecnología.</p>
+        </div>
+
+        <div class="datos_personales" id="datos_personales">
+            <h2>Datos Personales</h2>
+            <img src="assets/images/portafolio.jpg" alt="Foto de perfil de Cristian Ginarte" class="foto-perfil">
+            <p><strong>Nombre:</strong> Cristian Ginarte Cardenas</p>
+            <p><strong>Correo:</strong> crisgtx18@gmail.com</p>
+            <p><strong>Teléfono:</strong> +55 75 999971121</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/Crisgtx18" target="_blank"
+                    rel="noopener noreferrer">github.com/Crisgtx18</a></p>
+        </div>
+
+        <div class="proyectos" id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <ul>
+                <li><a href="https://github.com/Crisgtx18/Game_SpaceShip" target="_blank"
+                        rel="noopener noreferrer">Juego de Naves Espaciales (GitHub)</a></li>
+                <li><a href="https://github.com/Crisgtx18/UFRB-Web-Site" target="_blank"
+                        rel="noopener noreferrer">Página Web de la UFRB (GitHub)</a></li>
+            </ul>
+        </div>
+
+        <div class="habilidades" id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            <table>
+                <caption>Resumen de competencias</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Área</th>
+                        <th scope="col">Habilidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programación</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>Programación</td>
+                        <td>JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo Web</td>
+                        <td>HTML / CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Electrónica</td>
+                        <td>Arduino</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo</td>
+                        <td>Juegos</td>
+                    </tr>
+                    <tr>
+                        <td>Soporte</td>
+                        <td>Hardware</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabla_estudios" id="tabla_estudios">
+            <h2>Dominio Técnico</h2>
+            <table>
+                <caption>Nivel de dominio por tecnología</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Tecnología</th>
+                        <th scope="col">Nivel</th>
+                        <th scope="col">Porcentaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>Alto</td>
+                        <td>
+                            <div class="barra-contenedor"><span>85%</span>
+                                <div class="barra">
+                                    <div class="progreso progreso-alto" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Arduino</td>
+                        <td>Alto</td>
+                        <td>
+                            <div class="barra-contenedor"><span>85%</span>
+                                <div class="barra">
+                                    <div class="progreso progreso-alto" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>HTML / CSS</td>
+                        <td>Intermedio</td>
+                        <td>
+                            <div class="barra-contenedor"><span>70%</span>
+                                <div class="barra">
+                                    <div class="progreso progreso-medio" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Electrónica</td>
+                        <td>Intermedio</td>
+                        <td>
+                            <div class="barra-contenedor"><span>70%</span>
+                                <div class="barra">
+                                    <div class="progreso progreso-medio" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Intermedio</td>
+                        <td>
+                            <div class="barra-contenedor"><span>55%</span>
+                                <div class="barra">
+                                    <div class="progreso progreso-bajo" style="width: 55%;"></div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="contacto card-full" id="contacto">
+            <h2>Contacto</h2>
+            <form id="form-contacto" novalidate>
+                <div class="form-grid">
+                    <div><label for="nombre">Nombre:</label><input type="text" id="nombre" name="nombre" required
+                            aria-required="true"></div>
+                    <div><label for="email">Mail:</label><input type="email" id="email" name="email" required
+                            aria-required="true"></div>
+                </div>
+                <div><label for="asunto">Asunto:</label><input type="text" id="asunto" name="asunto" required
+                        aria-required="true"></div>
+                <div><label for="mensaje">Mensaje:</label><textarea id="mensaje" name="mensaje" rows="4" required
+                        aria-required="true"></textarea></div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+            <div id="mensaje-estado" aria-live="polite"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Cristian Ginarte | Enlace a mi <a href="https://github.com/Crisgtx18" target="_blank"
+                rel="noopener noreferrer">GitHub</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
