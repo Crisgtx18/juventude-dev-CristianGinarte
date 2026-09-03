@@ -5,7 +5,7 @@ TAREA!
 
 Crear portafolio personal accesibe y organizado, que presente su trayectoria y esté preparado para evolucionar durante todo el curso 
 
-> presentacion personal
+> presentacion personal \n
 > lista de habilidades o asuntos de estudio
 > por lo menos 2 proyectos
 > imagen con texto alternativo
