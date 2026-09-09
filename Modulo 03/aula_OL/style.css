@@ -1,0 +1,33 @@
+body {
+    background: #cfd8e3;
+    font-family: Arial;
+
+
+}
+
+.cartao {
+    background: #144e6d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+
+}
+
+.cartao:hover {
+    background: #152342;
+    color: white;
+    transition: 0.5s;
+
+}
+
+
+#titulo {
+    color: #1f418c;
+    background-color: #cfd8e3;
+    padding: 10px;
+    border-radius: 20px;
+
+}
