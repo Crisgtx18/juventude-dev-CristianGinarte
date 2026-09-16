@@ -4,50 +4,21 @@
     box-sizing: border-box;
 }
 
-:root {
-    --cor-primaria: #f39c12;
-    --cor-secundaria: #e74c3c;
-    --cor-acento: #27ae60;
-    --cor-escura: #2c3e50;
-    --cor-clara: #ecf0f1;
-    --gradiente-principal: linear-gradient(135deg, #f39c12 0%, #e74c3c 50%, #27ae60 100%);
-    --sombra-suave: 0 4px 20px rgba(243, 156, 18, 0.3);
-    --sombra-forte: 0 8px 40px rgba(243, 156, 18, 0.4);
-    --transicao: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7;
-    color: var(--cor-escura);
-    background: linear-gradient(45deg, #fff9e6 0%, #ffe6e6 50%, #e6ffe6 100%);
+    color: #ecf0f1;
+    background: linear-gradient(45deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
     min-height: 100vh;
 }
 
 .cabecalho {
-    background: var(--gradiente-principal);
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 50%, #16213e 100%);
     color: white;
     text-align: center;
     padding: 3rem 2rem;
-    position: relative;
-    overflow: hidden;
-    box-shadow: var(--sombra-forte);
-}
-
-.cabecalho::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-    animation: rotacao 15s linear infinite;
-}
-
-@keyframes rotacao {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 3px solid #c0392b;
 }
 
 .cabecalho h1 {
@@ -55,8 +26,6 @@ body {
     font-weight: 800;
     margin-bottom: 1rem;
     text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
-    position: relative;
-    z-index: 1;
     letter-spacing: 2px;
 }
 
@@ -64,8 +33,6 @@ body {
     font-size: 1.4rem;
     color: rgba(255, 255, 255, 0.95);
     font-weight: 300;
-    position: relative;
-    z-index: 1;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -77,50 +44,21 @@ body {
 }
 
 .evento, .cronograma {
-    background: white;
+    background: linear-gradient(135deg, #2d2d44 0%, #1a1a2e 100%);
     border-radius: 20px;
     padding: 3rem;
-    box-shadow: var(--sombra-suave);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     margin-bottom: 3rem;
-    position: relative;
-    overflow: hidden;
-    border: 1px solid rgba(243, 156, 18, 0.1);
-    transition: var(--transicao);
-}
-
-.evento:hover, .cronograma:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--sombra-forte);
-}
-
-.evento::before, .cronograma::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: var(--gradiente-principal);
+    border: 1px solid rgba(192, 57, 43, 0.3);
 }
 
 h2 {
-    color: var(--cor-primaria);
+    color: #e74c3c;
     font-size: 2.2rem;
     margin-bottom: 2rem;
-    position: relative;
     padding-bottom: 1rem;
     font-weight: 700;
-}
-
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 80px;
-    height: 4px;
-    background: var(--gradiente-principal);
-    border-radius: 2px;
+    border-bottom: 2px solid #c0392b;
 }
 
 .informacoes {
@@ -130,24 +68,15 @@ h2::after {
 }
 
 .info-item {
-    background: linear-gradient(135deg, #fff9e6 0%, #ffe6e6 100%);
+    background: linear-gradient(135deg, #3d3d5c 0%, #2d2d44 100%);
     padding: 1.5rem;
     border-radius: 12px;
     font-size: 1.15rem;
-    border-left: 5px solid var(--cor-primaria);
-    transition: var(--transicao);
-    position: relative;
-    overflow: hidden;
-}
-
-.info-item:hover {
-    transform: translateX(10px);
-    border-left-color: var(--cor-acento);
-    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.2);
+    border-left: 5px solid #c0392b;
 }
 
 .info-item strong {
-    color: var(--cor-primaria);
+    color: #e74c3c;
     font-weight: 700;
     display: block;
     margin-bottom: 0.3rem;
@@ -158,7 +87,7 @@ h2::after {
 
 .botao-programacao, .botao-voltar {
     display: inline-block;
-    background: var(--gradiente-principal);
+    background: linear-gradient(135deg, #c0392b 0%, #8e44ad 100%);
     color: white;
     padding: 1.2rem 2.5rem;
     text-decoration: none;
@@ -166,109 +95,42 @@ h2::after {
     font-size: 1.2rem;
     font-weight: 600;
     margin-top: 1.5rem;
-    transition: var(--transicao);
-    box-shadow: 0 4px 20px rgba(243, 156, 18, 0.4);
-    position: relative;
-    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(192, 57, 43, 0.4);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.botao-programacao::before, .botao-voltar::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    transition: 0.5s;
-}
-
-.botao-programacao:hover::before, .botao-voltar:hover::before {
-    left: 100%;
-}
-
-.botao-programacao:hover, .botao-voltar:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 8px 30px rgba(243, 156, 18, 0.5);
-}
-
 .atividade {
-    background: linear-gradient(135deg, #ffffff 0%, #fff9e6 100%);
+    background: linear-gradient(135deg, #3d3d5c 0%, #2d2d44 100%);
     padding: 2rem;
     margin-bottom: 1.5rem;
     border-radius: 15px;
-    border-left: 6px solid var(--cor-primaria);
-    transition: var(--transicao);
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.atividade::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100px;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(243, 156, 18, 0.05));
-    transform: skewX(-15deg);
-    transition: var(--transicao);
-}
-
-.atividade:hover {
-    transform: translateX(10px);
-    border-left-color: var(--cor-acento);
-    box-shadow: 0 5px 25px rgba(39, 174, 96, 0.15);
-}
-
-.atividade:hover::before {
-    width: 200px;
-    background: linear-gradient(90deg, transparent, rgba(231, 76, 60, 0.1));
+    border-left: 6px solid #c0392b;
 }
 
 .atividade h3 {
-    color: var(--cor-primaria);
+    color: #e74c3c;
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
-    position: relative;
-    z-index: 1;
 }
 
 .atividade p {
-    color: #555;
+    color: #bdc3c7;
     font-size: 1.1rem;
     line-height: 1.8;
-    position: relative;
-    z-index: 1;
 }
 
 .rodape {
-    background: var(--gradiente-principal);
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 50%, #16213e 100%);
     color: white;
     text-align: center;
     padding: 2rem;
     margin-top: 3rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.rodape::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    border-top: 3px solid #c0392b;
 }
 
 .rodape p {
-    position: relative;
-    z-index: 1;
     font-size: 1.1rem;
     font-weight: 300;
     letter-spacing: 1px;
@@ -285,19 +147,10 @@ h2::after {
 
     .evento, .cronograma {
         padding: 2rem;
-        border-radius: 15px;
     }
 
     h2 {
         font-size: 1.8rem;
-    }
-
-    .info-item {
-        padding: 1.2rem;
-    }
-
-    .atividade {
-        padding: 1.5rem;
     }
 }
 
@@ -308,12 +161,6 @@ h2::after {
 
     .cabecalho h1 {
         font-size: 2rem;
-        letter-spacing: 1px;
-    }
-
-    .data-evento {
-        font-size: 1.1rem;
-        letter-spacing: 2px;
     }
 
     .principal {
@@ -322,7 +169,6 @@ h2::after {
 
     .evento, .cronograma {
         padding: 1.5rem;
-        border-radius: 12px;
     }
 
     h2 {
@@ -332,25 +178,5 @@ h2::after {
     .botao-programacao, .botao-voltar {
         display: block;
         text-align: center;
-        padding: 1rem 2rem;
-        font-size: 1.1rem;
-    }
-
-    .info-item {
-        padding: 1rem;
-        font-size: 1rem;
-    }
-
-    .atividade {
-        padding: 1.2rem;
-        border-radius: 10px;
-    }
-
-    .atividade h3 {
-        font-size: 1.3rem;
-    }
-
-    .atividade p {
-        font-size: 1rem;
     }
 }
