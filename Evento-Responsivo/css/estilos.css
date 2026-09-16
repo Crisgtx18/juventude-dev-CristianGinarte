@@ -12,7 +12,7 @@ body {
     min-height: 100vh;
 }
 
-.cabecalho {
+.header {
     background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 50%, #16213e 100%);
     color: white;
     text-align: center;
@@ -21,7 +21,7 @@ body {
     border-bottom: 3px solid #c0392b;
 }
 
-.cabecalho h1 {
+.header h1 {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
@@ -29,7 +29,7 @@ body {
     letter-spacing: 2px;
 }
 
-.data-evento {
+.event-date {
     font-size: 1.4rem;
     color: rgba(255, 255, 255, 0.95);
     font-weight: 300;
@@ -37,13 +37,13 @@ body {
     letter-spacing: 3px;
 }
 
-.principal {
+.main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 3rem 2rem;
 }
 
-.evento, .cronograma {
+.event, .schedule {
     background: linear-gradient(135deg, #2d2d44 0%, #1a1a2e 100%);
     border-radius: 20px;
     padding: 3rem;
@@ -61,7 +61,7 @@ h2 {
     border-bottom: 2px solid #c0392b;
 }
 
-.informacoes {
+.info {
     margin: 2rem 0;
     display: grid;
     gap: 1.5rem;
@@ -85,7 +85,7 @@ h2 {
     letter-spacing: 1px;
 }
 
-.botao-programacao, .botao-voltar {
+.btn-schedule, .btn-back {
     display: inline-block;
     background: linear-gradient(135deg, #c0392b 0%, #8e44ad 100%);
     color: white;
@@ -100,7 +100,7 @@ h2 {
     letter-spacing: 1px;
 }
 
-.atividade {
+.activity {
     background: linear-gradient(135deg, #3d3d5c 0%, #2d2d44 100%);
     padding: 2rem;
     margin-bottom: 1.5rem;
@@ -108,20 +108,20 @@ h2 {
     border-left: 6px solid #c0392b;
 }
 
-.atividade h3 {
+.activity h3 {
     color: #e74c3c;
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.atividade p {
+.activity p {
     color: #bdc3c7;
     font-size: 1.1rem;
     line-height: 1.8;
 }
 
-.rodape {
+.footer {
     background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 50%, #16213e 100%);
     color: white;
     text-align: center;
@@ -130,22 +130,22 @@ h2 {
     border-top: 3px solid #c0392b;
 }
 
-.rodape p {
+.footer p {
     font-size: 1.1rem;
     font-weight: 300;
     letter-spacing: 1px;
 }
 
 @media (max-width: 900px) {
-    .cabecalho h1 {
+    .header h1 {
         font-size: 2.8rem;
     }
 
-    .principal {
+    .main {
         padding: 2rem 1.5rem;
     }
 
-    .evento, .cronograma {
+    .event, .schedule {
         padding: 2rem;
     }
 
@@ -155,19 +155,19 @@ h2 {
 }
 
 @media (max-width: 320px) {
-    .cabecalho {
+    .header {
         padding: 2rem 1.5rem;
     }
 
-    .cabecalho h1 {
+    .header h1 {
         font-size: 2rem;
     }
 
-    .principal {
+    .main {
         padding: 1.5rem 1rem;
     }
 
-    .evento, .cronograma {
+    .event, .schedule {
         padding: 1.5rem;
     }
 
@@ -175,7 +175,7 @@ h2 {
         font-size: 1.5rem;
     }
 
-    .botao-programacao, .botao-voltar {
+    .btn-schedule, .btn-back {
         display: block;
         text-align: center;
     }
