@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contenedores</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 30px 30px 0 30px;
+      background-color: #1a1a1a;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      background-color: #2b2b2b;
+      padding: 20px;
+    }
+
+    .rectangular {
+      width: 60%;
+      height: 200px;
+      background-color: #e74c3c;
+      margin-right: 20px;
+      margin-left: auto;
+    }
+
+    .cuadrado {
+      width: 200px;
+      height: 200px;
+      background-color: #3498db;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="rectangular"></div>
+    <div class="cuadrado"></div>
+  </div>
+</body>
+</html>2

@@ -1,0 +1,65 @@
+* {box-sizing: border-box;}
+body {margin: 20px;}
+.box1 {
+    width: calc(100% - 220px);
+    height: 120px;
+    background: #3498db;
+    margin-bottom: 20px;
+}
+.box2 {
+    width: 120px;
+    height: 120px;
+    background: #e74c3c;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+}
+.box_padre {
+    display: grid;
+    background: #ff9f43;
+}
+
+.box_hijo1{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+.box_nieto1 {
+    width: 220px;
+    height: 140px;
+    background: #8e44ad;
+
+}
+
+.box_nieto2 {
+    align-self: center;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+.circle{
+    background-color: #16a08a;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    
+    
+}
+
+.box_hijo2 {
+    height: 100px;
+    background: #f1c40f;
+    margin: 20px;
+}
+
+.box3 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: #2c3e50;
+    margin: 20px ;
+    margin-bottom: 0;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--1 Framework (CSS)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!--2 Mi (CSS) siempre despues de el primer framework-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #7a8292; margin: 10px">
+    <a href="#" class="btn btn-primary">Ver objetos</a>
+    
+    <input type="text" class="form-control">
+    <textarea class="form-control" rows="4"></textarea>
+    
+    <div class="mb-3" style="background-color: #515453; border-radius:10px">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email">
+    </div>
+
+    <form class="needs-validation" novalidate style="background-color: #515453; border-radius: 10px;">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Escriba un email valido</div>
+        <div class="valid-feedback">Bien!</div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+
+    <select class="form-select" id="motivo">
+        <option>Escoja una opcion</option>
+    </select>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="aceite">
+        <label class="form-check-label" for="aceite">Acepto los terminos</label>
+    </div>
+    <div class="input-group">
+        <span class="input-group-text">@</span>
+        <input type="email" class="form-control">
+    </div>
+
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox"  id="aviso">
+        <label class="form-check-label" for="aviso">Quiero recibir noveades</label>
+    </div>
+
+    <input type="range" class="form-range" min="0" max="5">
+
+    <div class="form-floating">
+        <input type="text" class="form-control" id="assunto" placeholder="Assunto">
+        <label for="assunto">Assunto</label>
+    </div>
+
+    <input class="form-control form-control-lg">
+    <button class="btn btn-outline-primary">Limpiar</button>
+
+
+
+    </body>
+</html>
